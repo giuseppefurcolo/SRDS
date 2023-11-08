@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&display=swap");
+
+body {
+  overflow: hidden;
+}
+
+#imgWrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+}
+
+@T: 4px;
+@R: 8px;
+@B: 4px;
+@L: 8px;
+@gapL: 32px + @L;
+@gapT: 32px + @T;
+
+@radius: 5px;
+@titleBG: #000000cc;
+@titleTX: #e0e0ff;
+
+.title {
+  top: @gapT;
+  left: @gapL;
+  position: absolute;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: @titleTX;
+  border-radius: @radius;
+  box-shadow: @R 0px 0 0px @titleBG, -@L 0px 0 0px @titleBG;
+  padding: @T 0 @B 0;
+  display: inline;
+  word-wrap: break-word;
+  background-color: @titleBG;
+  z-index: 100;
+  .subt {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.main {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  //left: 32px;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  //gap: 32px;
+
+  @sT: 4px;
+  @sR: 12px;
+  @sB: 4px;
+  @sL: 12px;
+  @sradius: 5px;
+  @sGapL: 32px + @sL;
+  @sGapB: 32px + @sB;
+
+  li {
+    display: flex;
+    //position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    //display: inline;
+    padding-left: @sGapL;
+    padding-bottom: @sGapB;
+
+    > a {
+      @itemBG: #000000cc;
+      color: @titleTX;
+      border-radius: @sradius;
+      box-shadow: @sR 0px 0 0px @itemBG, -@sL 0px 0 0px @itemBG;
+      padding: @sT 0 @sB 0;
+      background-color: @itemBG;
+      word-wrap: break-word;
+
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        @sGapL: 16px;
+        @itemBG: #000000f2; // Change the background color on hover
+        box-shadow: @sR 0px 0 0px @itemBG, -@sL 0px 0 0px @itemBG;
+        background-color: @itemBG;
+        padding-left: @sGapL;
+        transition: all 0.1s ease;
+      }
+    }
+  }
+}
+
+.footy {
+  @fT: 4px;
+  @fR: 12px;
+  @fB: 4px;
+  @fL: 12px;
+  @fradius: 5px;
+ @itemBG: #000000cc;
+  position: absolute;
+  background-color: @itemBG;
+  z-index: 100;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  list-style: none;
+  gap: 64px;
+
+  li {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    //display: inline;
+
+    > a {
+     
+      color: @titleTX;
+      border-radius: @fradius;
+      box-shadow: @fR 0px 0 0px @itemBG, -@fL 0px 0 0px @itemBG;
+      padding: @fT 0 @fB 0;
+      background-color: @itemBG;
+      word-wrap: break-word;
+
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        transition: all 0.1s ease;
+      }
+    }
+  }
+}
