@@ -336,6 +336,7 @@ body {
   transform: translate(-50%, 0);
   display: flex;
   flex-wrap: nowrap;
+  border-radius: 5px;
   padding: 0;
   list-style: none;
   gap: 64px;
@@ -343,15 +344,12 @@ body {
 .footy li {
   display: flex;
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
 }
 .footy li > a {
   color: #e0e0ff;
-  border-radius: 5px;
-  box-shadow: 12px 0px 0 0px #000000cc, -12px 0px 0 0px #000000cc;
-  padding: 4px 0 4px 0;
-  background-color: #000000cc;
+  padding: 6px 12px;
   word-wrap: break-word;
   text-decoration: none;
   transition: all 0.3s ease;

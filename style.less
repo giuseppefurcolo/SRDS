@@ -23,7 +23,6 @@ body {
   }
 }
 
-
 @T: 4px;
 @R: 8px;
 @B: 4px;
@@ -54,6 +53,7 @@ body {
     font-weight: 500;
   }
 }
+
 .main {
   position: absolute;
   z-index: 100;
@@ -66,7 +66,6 @@ body {
   justify-content: flex-start;
   padding: 0;
   list-style: none;
-  //gap: 32px;
 
   @sT: 4px;
   @sR: 12px;
@@ -78,11 +77,9 @@ body {
 
   li {
     display: flex;
-    //position: relative;
     font-family: "DM Sans", sans-serif;
     font-size: 40px;
     font-weight: 500;
-    //display: inline;
     padding-left: @sGapL;
     padding-bottom: @sGapB;
 
@@ -94,7 +91,6 @@ body {
       padding: @sT 0 @sB 0;
       background-color: @itemBG;
       word-wrap: break-word;
-
       text-decoration: none;
       transition: all 0.3s ease;
       &:hover {
@@ -115,7 +111,7 @@ body {
   @fB: 4px;
   @fL: 12px;
   @fradius: 5px;
- @itemBG: #000000cc;
+  @itemBG: #000000cc;
   position: absolute;
   background-color: @itemBG;
   z-index: 100;
@@ -124,6 +120,7 @@ body {
   transform: translate(-50%, 0);
   display: flex;
   flex-wrap: nowrap;
+  border-radius: 5px;
   padding: 0;
   list-style: none;
   gap: 64px;
@@ -131,19 +128,13 @@ body {
   li {
     display: flex;
     font-family: "DM Sans", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
-    //display: inline;
 
     > a {
-     
       color: @titleTX;
-      border-radius: @fradius;
-      box-shadow: @fR 0px 0 0px @itemBG, -@fL 0px 0 0px @itemBG;
-      padding: @fT 0 @fB 0;
-      background-color: @itemBG;
+      padding: 6px 12px;
       word-wrap: break-word;
-
       text-decoration: none;
       transition: all 0.3s ease;
       &:hover {
