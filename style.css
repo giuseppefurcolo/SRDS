@@ -58,10 +58,15 @@ body {
 }
 .title > a {
   text-decoration: none;
+  color: #e0e0ff;
 }
 .title .subt {
   font-size: 16px;
   font-weight: 700;
+}
+.title .subt > a {
+  text-decoration: none;
+  color: #e0e0ff;
 }
 .main {
   position: absolute;
