@@ -16,6 +16,8 @@ for (var i = 1; i < fishCount; i++) {
     spanBadge.textContent = interiors[i];
     badge.appendChild(spanBadge);
     field.appendChild(badge);
+  }else{
+    badge.remove();
   }
 
   var img1 = document.createElement("img");
