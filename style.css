@@ -55,6 +55,8 @@ body {
   word-wrap: break-word;
   background-color: #000000cc;
   z-index: 100;
+}
+.title > a {
   text-decoration: none;
 }
 .title .subt {
