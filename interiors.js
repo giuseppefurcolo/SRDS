@@ -31,7 +31,7 @@ for (var i = 1; i < fishCount; i++) {
     return function () {
       elementToHide.style.display = "none";
     };
-  })(fishEl);
+  })(fishEl,badge);
 
   fishEl.appendChild(img1);
   field.appendChild(fishEl);
