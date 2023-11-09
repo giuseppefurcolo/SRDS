@@ -1,6 +1,6 @@
 const field = document.getElementById("fish-field");
 
-var imagePath1 = "https://simonaregolo.com/interiors/";
+var imagePath1 = "https://giuseppefurcolo.github.io/SRDS/interiors/";
 
 var fishCount = 20;
 for (var i = 1; i < fishCount; i++) {
@@ -11,13 +11,14 @@ for (var i = 1; i < fishCount; i++) {
   var badge = document.createElement("div");
   badge.setAttribute("class", "badge");
   var spanBadge = document.createElement("span");
+  spanBadge.textContent = interiors[i];
 
-  if (interiors[i] != "") {
-    spanBadge.textContent = interiors[i];
+  if (spanBadge.textContent.trim() === "") {
+    // The text span has no text or only whitespace
+  } else {
+    // The text span has some text content
     badge.appendChild(spanBadge);
     field.appendChild(badge);
-  }else{
-    badge.remove();
   }
 
   var img1 = document.createElement("img");
@@ -27,11 +28,12 @@ for (var i = 1; i < fishCount; i++) {
   img1.style.width = 100 + "vw";
 
   // Create a closure to capture the correct fishEl for this imgEl
-  img1.onerror = (function (elementToHide) {
+  img1.onerror = (function (hide1, hide2) {
     return function () {
-      elementToHide.style.display = "none";
+      hide1.style.display = "none";
+      hide2.style.display = "none";
     };
-  })(fishEl,badge);
+  })(fishEl, badge);
 
   fishEl.appendChild(img1);
   field.appendChild(fishEl);
