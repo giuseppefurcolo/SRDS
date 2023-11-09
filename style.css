@@ -143,10 +143,12 @@ body {
   transform: translate(-16px, 36px);
   justify-content: right;
   align-items: right;
+  height: 0px;
 }
 .badge > span {
   text-align: right;
   display: flex;
+  height: max-content;
   padding: 6px 10px;
   justify-content: right;
   border-radius: 5px;
