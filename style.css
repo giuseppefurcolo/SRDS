@@ -104,14 +104,6 @@ body {
   padding-left: 16px;
   transition: all 0.1s ease;
 }
-.main > .choice {
-  color: #e0e0ff;
-  border-radius: 5px;
-  box-shadow: 12px 0px 0 0px #000000f2, -12px 0px 0 0px #000000f2;
-  background-color: #000000f2;
-  padding-left: 16px;
-  transition: all 0.1s ease;
-}
 .footy {
   position: absolute;
   background-color: #000000cc;
