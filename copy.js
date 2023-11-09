@@ -4,5 +4,5 @@ const interiors = [
     'world', 
     '',
     '',
-    'Brake', 
+    'Brake' 
 ];
