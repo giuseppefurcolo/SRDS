@@ -55,6 +55,7 @@ body {
   word-wrap: break-word;
   background-color: #000000cc;
   z-index: 100;
+  text-decoration: none;
 }
 .title .subt {
   font-size: 16px;
