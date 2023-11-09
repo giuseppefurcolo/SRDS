@@ -88,6 +88,15 @@ body {
   padding-left: 44px;
   padding-bottom: 36px;
 }
+.main li > span {
+  user-select: none;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 0 4px 16px;
+  background-color: #000000f2;
+  box-shadow: 12px 0px 0 0px #000000cc, -12px 0px 0 0px #000000cc;
+  background-color: #000000cc;
+}
 .main li > a {
   color: #e0e0ff;
   border-radius: 5px;
@@ -108,7 +117,7 @@ body {
   position: absolute;
   background-color: #000000cc;
   z-index: 100;
-  bottom: 8px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
@@ -164,7 +173,7 @@ body {
   color: #e0e0ff;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 300;
   word-wrap: break-word;
   flex-wrap: wrap;
