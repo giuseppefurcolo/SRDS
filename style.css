@@ -90,12 +90,11 @@ body {
 }
 .main li > span {
   user-select: none;
-  color: white;
+  color: #000000cc;
   border-radius: 5px;
   padding: 4px 0 4px 16px;
-  background-color: #000000f2;
-  box-shadow: 12px 0px 0 0px #000000cc, -12px 0px 0 0px #000000cc;
-  background-color: #000000cc;
+  box-shadow: 12px 0px 0 0px #e0e0ff, -12px 0px 0 0px #e0e0ff;
+  background-color: #e0e0ff;
 }
 .main li > a {
   color: #e0e0ff;
