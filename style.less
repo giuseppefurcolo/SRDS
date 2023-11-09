@@ -144,3 +144,43 @@ body {
     }
   }
 }
+
+#fish-field {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.fish {
+  display: flex;
+}
+
+.badge {
+  display: flex;
+  z-index: 110;
+  transform:translate(-16px, 36px);
+  justify-content: right;
+  align-items: right;
+
+  > span {
+    text-align:right;
+    display: flex;
+    padding: 6px 10px;
+    justify-content: right;
+    border-radius: 5px;
+    background: @TX;
+    color: @BG;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    max-width: 25vw;
+    //word-break: break-all;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
+}
