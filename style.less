@@ -32,8 +32,9 @@ body {
 @gapL: 32px + @L;
 @gapT: 32px + @T;
 @radius: 5px;
-@titleBG: #000000cc;
-@titleTX: #e0e0ff;
+@BG: #000000cc;
+@BGH: #000000f2;
+@TX: #e0e0ff;
 
 .title {
   top: @gapT;
@@ -42,13 +43,13 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: @titleTX;
+  color: @TX;
   border-radius: @radius;
-  box-shadow: @R 0px 0 0px @titleBG, -@L 0px 0 0px @titleBG;
+  box-shadow: @R 0px 0 0px @BG, -@L 0px 0 0px @BG;
   padding: @T 0 @B 0;
   display: inline;
   word-wrap: break-word;
-  background-color: @titleBG;
+  background-color: @BG;
   z-index: 100;
   .subt {
     font-size: 16px;
@@ -86,20 +87,18 @@ body {
     padding-bottom: @sGapB;
 
     > a {
-      @itemBG: #000000cc;
-      color: @titleTX;
+      color: @TX;
       border-radius: @sradius;
-      box-shadow: @sR 0px 0 0px @itemBG, -@sL 0px 0 0px @itemBG;
+      box-shadow: @sR 0px 0 0px @BG, -@sL 0px 0 0px @BG;
       padding: @sT 0 @sB 0;
-      background-color: @itemBG;
+      background-color: @BG;
       word-wrap: break-word;
       text-decoration: none;
       transition: all 0.3s ease;
       &:hover {
         @sGapL: 16px;
-        @itemBG: #000000f2; // Change the background color on hover
-        box-shadow: @sR 0px 0 0px @itemBG, -@sL 0px 0 0px @itemBG;
-        background-color: @itemBG;
+        box-shadow: @sR 0px 0 0px @BGH, -@sL 0px 0 0px @BGH;
+        background-color: @BGH;
         padding-left: @sGapL;
         transition: all 0.1s ease;
       }
@@ -115,7 +114,7 @@ body {
   @fradius: 5px;
   @itemBG: #000000cc;
   position: absolute;
-  background-color: @itemBG;
+  background-color: @BG;
   z-index: 100;
   bottom: 16px;
   left: 50%;
@@ -134,7 +133,7 @@ body {
     font-weight: 100;
 
     > a {
-      color: @titleTX;
+      color: @TX;
       padding: 6px 12px;
       word-wrap: break-word;
       text-decoration: none;
