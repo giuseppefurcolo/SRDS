@@ -90,11 +90,12 @@ body {
 }
 .main li > span {
   user-select: none;
-  color: #000000cc;
+  color: #e0e0ff;
   border-radius: 5px;
   padding: 4px 0 4px 16px;
-  box-shadow: 12px 0px 0 0px #e0e0ff, -12px 0px 0 0px #e0e0ff;
-  background-color: #e0e0ff;
+  box-shadow: 12px 0px 0 0px #000000f2, -12px 0px 0 0px #000000f2;
+  background-color: #000000f2;
+  animation: kick 0.3s 0.5s forwards ease;
 }
 .main li > a {
   color: #e0e0ff;
@@ -110,7 +111,21 @@ body {
   box-shadow: 12px 0px 0 0px #000000f2, -12px 0px 0 0px #000000f2;
   background-color: #000000f2;
   padding-left: 16px;
-  transition: all 0.1s ease;
+  transition: all 0.1s infinite ease;
+}
+@keyframes kick {
+  0% {
+    color: #e0e0ff;
+    padding: 4px 0 4px 16px;
+    box-shadow: 12px 0px 0 0px #000000f2, -12px 0px 0 0px #000000f2;
+    background-color: #000000f2;
+  }
+  100% {
+    color: #000000cc;
+    padding: 4px 0 4px 56px;
+    box-shadow: 12px 0px 0 0px #e0e0ff, -12px 0px 0 0px #e0e0ff;
+    background-color: #e0e0ff;
+  }
 }
 .footy {
   position: absolute;

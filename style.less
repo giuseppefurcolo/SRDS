@@ -34,7 +34,13 @@ body {
 @BG: #000000cc;
 @BGH: #000000f2;
 @TX: #e0e0ff;
-@TXS: white;
+
+@sT: 4px;
+@sR: 12px;
+@sB: 4px;
+@sL: 12px;
+@sGapL: 32px + @sL;
+@sGapB: 32px + @sB;
 
 .title {
   top: @gapT;
@@ -77,13 +83,6 @@ body {
   padding: 0;
   list-style: none;
 
-  @sT: 4px;
-  @sR: 12px;
-  @sB: 4px;
-  @sL: 12px;
-  @sGapL: 32px + @sL;
-  @sGapB: 32px + @sB;
-
   li {
     display: flex;
     font-family: "DM Sans", sans-serif;
@@ -93,12 +92,13 @@ body {
     padding-bottom: @sGapB;
     > span {
       user-select: none;
-      color: @BG;
+      color: @TX;
       border-radius: 5px;
       padding: @sT 0 @sB 16px;
-      background-color: @TX;
-      box-shadow: @sR 0px 0 0px @TX, -@sL 0px 0 0px @TX;
-      background-color: @TX;
+      background-color: @BGH;
+      box-shadow: @sR 0px 0 0px @BGH, -@sL 0px 0 0px @BGH;
+      background-color: @BGH;
+      animation: kick 0.3s 0.5s forwards ease ;
     }
     > a {
       color: @TX;
@@ -114,9 +114,26 @@ body {
         box-shadow: @sR 0px 0 0px @BGH, -@sL 0px 0 0px @BGH;
         background-color: @BGH;
         padding-left: @sGapL;
-        transition: all 0.1s ease;
+        transition: all 0.1s infinite ease;
       }
     }
+  }
+}
+
+@keyframes kick {
+  0% {
+    color: @TX;
+    padding: @sT 0 @sB 16px;
+    background-color: @BGH;
+    box-shadow: @sR 0px 0 0px @BGH, -@sL 0px 0 0px @BGH;
+    background-color: @BGH;
+  }
+  100% {
+     color: @BG;
+    padding: @sT 0 @sB 56px;
+    background-color: @TX;
+    box-shadow: @sR 0px 0 0px @TX, -@sL 0px 0 0px @TX;
+    background-color: @TX;
   }
 }
 
