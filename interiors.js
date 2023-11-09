@@ -1,6 +1,6 @@
 const field = document.getElementById("fish-field");
 
-var imagePath1 = "https://giuseppefurcolo.github.io/SRDS/interiors/coworking/";
+var imagePath1 = "https://simonaregolo.com/interiors/";
 
 var fishCount = 20;
 for (var i = 1; i < fishCount; i++) {
