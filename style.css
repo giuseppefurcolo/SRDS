@@ -100,7 +100,7 @@ body {
   position: absolute;
   background-color: #000000cc;
   z-index: 100;
-  bottom: 24px;
+  bottom: 16px;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
