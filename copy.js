@@ -7,7 +7,6 @@ const interiors = [
 ];
 
 const furniture = [
-   
     "", 
     "Den of Thieves invited at Salone del Mobile Ventura Lambrate", 
     "", 
@@ -15,10 +14,8 @@ const furniture = [
     "Big Table for WeWork Toronto",
     "",
     "",
-    "",
     "Table Details",
     "",
-    "Huge twin rolling tables for Loyal Kaspa's' New York City office",
+    "Huge twin rolling tables for Loyal Kaspar's New York City office",
     "Chopping boards collection"
-
 ];
