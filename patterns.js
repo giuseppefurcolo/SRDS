@@ -1,6 +1,6 @@
 const field = document.getElementById("fish-field");
 
-var imagePath1 = "https://giuseppefurcolo.github.io/SRDS/exhibit/";
+var imagePath1 = "https://giuseppefurcolo.github.io/SRDS/patterns/";
 
 var fishCount = 20;
 for (var i = 1; i < fishCount; i++) {
@@ -11,7 +11,7 @@ for (var i = 1; i < fishCount; i++) {
   var badge = document.createElement("div");
   badge.setAttribute("class", "badge");
   var spanBadge = document.createElement("span");
-  spanBadge.textContent = exhibit[i];
+  spanBadge.textContent = patterns[i];
 
   if (spanBadge.textContent.trim() === "") {
     // The text span has no text or only whitespace
