@@ -11,17 +11,17 @@ const interiors = [
     "", 
     "", 
     "", 
-    "Private apartment in Rome, Italy",
+    "Private apartment in Rome, Italy.",
     "", 
     "", 
     "", 
-    "Resort in Turks and Caicos Islands",
+    "Resort in Turks and Caicos Islands.",
     "", 
     "", 
     "", 
     "", 
     "", 
-    "Private apartment in New York City",
+    "Private apartment in New York City.",
     "", 
     "", 
     "", 
@@ -30,30 +30,34 @@ const interiors = [
     "", 
     "", 
     "", 
-    "Private apartment in Rome, Italy", 
+    "Private apartment in Rome, Italy.", 
 
 ];
 
 const furniture = [
     "", 
-    "Den of Thieves Tables and detials.", 
+    "Den of Thieves at Salone del Mobile Milano, Italy. ", 
     "", 
+    "", 
+    "Chopping boards collection.", 
+    "Tables details.", 
     "", 
     "Commisioned table for shared space of the WeWork office in Toronto.",
     "",
     "",
     "Huge twin, bar height, rolling tables for Loyal Kaspar's New York City office.",
-    "Den of Thieves Chopping boards collection"
+    "", 
+    "Den of Thieves Chopping boards collection."
 ];
 
 const patterns = [
     "", 
-    "Den of Thieves Tables", 
     "", 
     "", 
-    "Big Table for WeWork Toronto",
-    "",
-    "",
-    "Huge twin rolling tables for Loyal Kaspar's New York City office",
-    "Den of Thieves Chopping boards collection"
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+
 ];
