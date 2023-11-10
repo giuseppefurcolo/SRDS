@@ -26,6 +26,12 @@ const interiors = [
     "", 
     "", 
     "Gut renovation of coworking space in the heart of Roma, Italy.", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "Private apartment in Rome, Italy", 
+
 ];
 
 const furniture = [
