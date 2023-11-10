@@ -1,8 +1,8 @@
 const field = document.getElementById("fish-field");
 
-var imagePath1 = "https://giuseppefurcolo.github.io/SRDS/interiors/";
+var imagePath1 = "./interiors/";
 
-var fishCount = 20;
+var fishCount = 40;
 for (var i = 1; i < fishCount; i++) {
   var fishEl = document.createElement("div");
   fishEl.setAttribute("class", "fish");

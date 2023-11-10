@@ -1,6 +1,6 @@
 const field = document.getElementById("fish-field");
 
-var imagePath1 = "https://giuseppefurcolo.github.io/SRDS/patterns/";
+var imagePath1 = "./patterns/";
 
 var fishCount = 20;
 for (var i = 1; i < fishCount; i++) {

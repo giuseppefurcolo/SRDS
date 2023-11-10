@@ -1,5 +1,5 @@
 var imgArray = ['1.jpg', '2.jpg', '3.jpg'];
-var basePath="https://simonaregolo.com/hero/";
+var basePath="./hero/";
 
 function imgRandom() {
    // for (var i = 0; i < 3; i++) {
