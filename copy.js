@@ -7,6 +7,8 @@ const interiors = [
 ];
 
 const furniture = [
+   
+    "", 
     "Den of Thieves invited at Salone del Mobile Ventura Lambrate", 
     "", 
     "", 

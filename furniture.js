@@ -11,7 +11,7 @@ for (var i = 1; i < fishCount; i++) {
   var badge = document.createElement("div");
   badge.setAttribute("class", "badge");
   var spanBadge = document.createElement("span");
-  spanBadge.textContent = interiors[i];
+  spanBadge.textContent = furniture[i];
 
   if (spanBadge.textContent.trim() === "") {
     // The text span has no text or only whitespace
