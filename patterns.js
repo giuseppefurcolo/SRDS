@@ -2,7 +2,7 @@ const field = document.getElementById("fish-field");
 
 var imagePath1 = "./patterns/";
 
-var fishCount = 20;
+var fishCount = 24;
 for (var i = 1; i < fishCount; i++) {
   var fishEl = document.createElement("div");
   fishEl.setAttribute("class", "fish");

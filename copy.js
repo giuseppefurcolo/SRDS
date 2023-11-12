@@ -1,6 +1,6 @@
 const interiors = [
     "", 
-    "47th Annual Kips Bay Decorator Show House in New York City, with Young Huh Studio.",
+    "47th Annual Kips Bay Decorator Show in New York City, with Young Huh Studio.",
     "",
     "",
     "",
@@ -15,7 +15,7 @@ const interiors = [
     "", 
     "", 
     "", 
-    "Resort in Turks and Caicos Islands.",
+    "Resort in Turks & Caicos Islands.",
     "", 
     "", 
     "", 
@@ -47,17 +47,28 @@ const furniture = [
     "",
     "Huge twin, bar height, rolling tables for Loyal Kaspar's New York City office.",
     "", 
-    "Den of Thieves Chopping boards collection."
+    "Den of Thieves chopping boards collection."
 ];
 
 const patterns = [
     "", 
+    "Custom Wallpaper for private residence.", 
+    "Custom Bisazza mosaic for a resort in Turks & Caicos.", 
     "", 
     "", 
+    "Custom rug for private residence.", 
+    "", 
+    "Floor tiles for private residence.", 
+    "", 
+    "Custom rug.", 
+    "Custom wallpaper for private residence.", 
+    "", 
+    "Custom tiles.", 
     "", 
     "", 
+    "Custom wallpaper for private residence.",
     "", 
     "", 
-    "", 
+    "Den of Thieves chopping board colection.",
 
 ];
